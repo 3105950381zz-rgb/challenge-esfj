@@ -121,27 +121,7 @@ const DATA={
   winDesc:'你回应了ESFJ的关心和热情。你不再觉得TA啰嗦，而是看懂了那是TA爱你的方式。TA重新对你敞开了心——因为在你这，TA的付出终于被看见了。'
 };
 
-const OPTIONS=[
-  '热情回应TA的关心',
-  '主动找TA聊天分享日常',
-  '嫌TA啰嗦让TA别管你',
-  '在朋友面前给TA面子'
-];
-
-const STAGES=[
-  {scene:'TA问你吃饭了吗你说别烦我',line:'那你记得吃。',safe:1,death:'别烦我 你真的不再被烦了'},
-  {scene:'TA热情分享日常你回嗯',line:'你今天开心吗？',safe:2,death:'嗯 TA的热情被嗯没了'},
-  {scene:'TA组织聚会没叫你',line:'怕你不喜欢。',safe:4,death:'你说怎么不叫我 TA说你上次不想来'},
-  {scene:'TA发了好多消息你只回最后一条',line:'你在忙吧。',safe:1,death:'在忙 TA不再打扰 包括不再打扰你生活'},
-  {scene:'你嫌TA太黏人',line:'那我少找你。',safe:2,death:'你嫌TA黏 TA戒了 包括戒你'},
-  {scene:'TA精心准备约会你全程看手机',line:'不好玩吗？',safe:4,death:'你说还好 TA的用心被还了回去'},
-  {scene:'TA问你是不是不开心你说没有',line:'真的没有？',safe:1,death:'你说没事 TA憋了一周没敢问你'},
-  {scene:'TA的朋友圈开始没有你了',line:'没什么发的。',safe:2,death:'没什么发的 没什么关于你的'},
-  {scene:'TA不再主动找你聊天了',line:'你找我有事？',safe:2,death:'你习惯TA找你 TA不找了 你才发现'},
-  {scene:'你发现TA跟别人聊得很开心',line:'TA人挺好的。',safe:4,death:'你吃醋 TA说你上次不是嫌我烦吗'},
-  {scene:'TA说你变了',line:'你以前不是这样的。',safe:1,death:'你说没有 TA的直觉从没错过'},
-  {scene:'TA最后一次问你过得好不好',line:'你要好好的。',safe:2,death:'你说嗯 那是TA最后一次关心你'}
-];
+const STAGES=[{scene:"TA问你吃饭了吗你说别烦我",line:"那你记得吃。",options:["好我去吃你吃了吗","你关心我我知道了我只是心情不好","你能不能别老问吃饭这种问题","谢谢你记得我吃了"],safe:1,death:"别烦我 你真的不再被烦了"},{scene:"TA热情分享日常你回嗯",line:"你今天开心吗？",options:["不开心你今天怎么样","嗯","你跟我多说点我听着","你今天做了什么开心的事吗"],safe:2,death:"嗯 TA的热情被嗯没了"},{scene:"TA组织聚会没叫你",line:"怕你不喜欢。",options:["我喜欢我喜欢下次叫我","你不叫我我怎么去","你不问我怎么知道我不喜欢","你宁愿猜也不问我"],safe:4,death:"你说怎么不叫我 TA说你上次不想来"},{scene:"TA发了好多消息你只回最后一条",line:"你在忙吧。",options:["我不忙我现在一条条回你","嗯有点忙","对不起我看了忘了回","你多发点我喜欢看"],safe:1,death:"在忙 TA不再打扰 包括不再打扰你生活"},{scene:"你嫌TA太黏人",line:"那我少找你。",options:["我不是那个意思我喜欢你找我","好你少找点我清净","你找我我还是会回你的","我嫌你黏但没说不喜欢你找"],safe:2,death:"你嫌TA黏 TA戒了 包括戒你"},{scene:"TA精心准备约会你全程看手机",line:"不好玩吗？",options:["好玩的我错了我不看手机了","还行吧","你准备得很好是我不对","我放下手机一心陪你"],safe:4,death:"你说还好 TA的用心被还了回去"},{scene:"TA问你是不是不开心你说没有",line:"真的没有？",options:["真的没有就是有点累","有我在想我们的关系","你总问我觉得很烦","有一点但不想说"],safe:1,death:"你说没事 TA憋了一周没敢问你"},{scene:"TA的朋友圈开始没有你了",line:"没什么发的。",options:["你以前经常发我的","你不发我我怎么知道你在干嘛","你不想发就不发","你是不是把我屏蔽了"],safe:2,death:"没什么发的 没什么关于你的"},{scene:"TA不再主动找你聊天了",line:"你找我有事？",options:["没事就不能找你了吗","有我很想你","你是不是在等我不找你","你现在都这么冷淡了吗"],safe:2,death:"你习惯TA找你 TA不找了 你才发现"},{scene:"你发现TA跟别人聊得很开心",line:"TA人挺好的。",options:["你跟他聊不理我","那你多跟他聊吧","你跟他聊什么这么开心","我也能让你这么开心"],safe:4,death:"你吃醋 TA说你上次不是嫌我烦吗"},{scene:"TA说你变了",line:"你以前不是这样的。",options:["人都会变的但爱你没变","那你喜欢以前的我你去找以前的我","我变也是为了我们","你告诉我你喜欢我怎样"],safe:1,death:"你说没有 TA的直觉从没错过"},{scene:"TA最后一次问你过得好不好",line:"你要好好的。",options:["没你我怎么好","我很好你放心","你也要好好的","我们真的回不去了吗"],safe:2,death:"你说嗯 那是TA最后一次关心你"}];
 
 let cur=0,over=false;
 const A=document.getElementById('app');
@@ -176,7 +156,7 @@ function lv(){
   if(over)return'';
   if(cur>=STAGES.length)return end();
   const s=STAGES[cur];
-  const optsHtml=OPTIONS.map((o,i)=>`<button class="opt" onclick="pk(${i})"><span class="il s${i+1}">${LABELS[i]}</span>${o}</button>`).join('');
+  const optsHtml=s.options.map((o,i)=>`<button class="opt" onclick="pk(${i})"><span class="il s${i+1}">${LABELS[i]}</span>${o}</button>`).join('');
   return `<div class="card fi">
     <div class="lv-hd">
       <span class="lv-name">⚠️ 第${cur+1}/${STAGES.length}关</span>
